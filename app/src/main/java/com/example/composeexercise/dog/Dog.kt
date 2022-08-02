@@ -1,8 +1,9 @@
 package com.example.composeexercise.dog
 
 import com.example.composeexercise.R
+import java.io.Serializable
 
-data class Dog(val name: String, val image: Int, val introduction: String)
+data class Dog(val name: String, val image: Int, val introduction: String) : Serializable
 
 // 数据的收集好累，555
 // 数据来源：https://dogtime.com/dog-breeds/profiles

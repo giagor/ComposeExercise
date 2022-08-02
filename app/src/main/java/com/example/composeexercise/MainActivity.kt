@@ -12,9 +12,12 @@ import com.example.composeexercise.dog.DogListActivity
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        // 调整状态栏
+        window.adaptStatusBar()
+
         setContent {
             Column {
-                RouterButton({ startActivity(DogListActivity::class.java) }, "跳转到 Dog 领养应用")
+                RouterButton({ startActivitySimply(DogListActivity::class.java) }, "跳转到 Dog 领养应用")
             }
         }
     }

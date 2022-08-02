@@ -25,6 +25,11 @@
             android:name=".dog.DogListActivity"
             android:exported="true"
             android:theme="@style/Theme.ComposeExercise"/>
+
+        <activity
+            android:name=".dog.DogDetailActivity"
+            android:exported="true"
+            android:theme="@style/Theme.ComposeExercise"/>
         
     </application>
 
